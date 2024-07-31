@@ -1,5 +1,5 @@
 import React, { useReducer } from "react";
-import { Platform, StatusBar, Text } from "react-native";
+import { Platform, SafeAreaView, StatusBar, Text } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 
 import { AuthContext } from "./AuthContext";
@@ -105,12 +105,16 @@ const AppContainer = () => {
   }
 
   return (
+  
     <AuthContext.Provider
       value={{ state, setState, signin, signOut, setState }}
     >
+    
+
       <NavigationContainer>
-        {state?.userToken ? <AppNavigator /> : <AuthNavigator />}
+        {state?.userToken ? <SplashScreen /> : <SplashScreen />}
       </NavigationContainer>
+      
     </AuthContext.Provider>
   );
 };

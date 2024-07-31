@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useEffect } from "react";
 import {
   StyleSheet,
   Text,
@@ -10,6 +10,7 @@ import {
   ImageBackground,
   TextInput,
   Dimensions,
+  StatusBar,
 } from "react-native";
 import Colors from "_styles/colors";
 import {
@@ -27,10 +28,19 @@ import { AuthContext } from "_navigations/AuthContext";
 export default class SplashScreen extends Component {
   static contextType = AuthContext;
   state = {};
+  
+  componentDidMount() {
+    // Hide status bar when component mounts
+    StatusBar.setHidden(true, 'fade');
+  }
 
+  componentWillUnmount() {
+    // Ensure status bar is visible when component unmounts
+    StatusBar.setHidden(false, 'fade');
+  }
   render() {
     const navigation = this.props.navigation;
-
+    
     return (
       <View
         style={{

@@ -147,13 +147,14 @@ const RNIntroSlider = (props) => {
   const primaryButton = isLastSlide ? _renderDoneButton() : _renderNextButton();
 
   return (
-    <GestureHandlerRootView>
-      <StatusBar barStyle="default" />
-      <SafeAreaView style={{ flex: 1 }}>
+    <GestureHandlerRootView style={{flex:1 ,}}>
+     
+        
+
         
         <ScrollView
           ref={(ref) => (scrollRef = ref)}
-          style={{ flex: 1 }}
+          style={{ flex: 1 , backgroundColor:"red" }}
           horizontal={true}
           scrollEventThrottle={16}
           pagingEnabled={true}
@@ -172,7 +173,7 @@ const RNIntroSlider = (props) => {
           _renderPaginationDot()}
         {primaryButton}
         {secondaryButton}
-      </SafeAreaView>
+       
       </GestureHandlerRootView>
    
   );
