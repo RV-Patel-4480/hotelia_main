@@ -10,6 +10,7 @@ import {
   ImageBackground,
   TextInput,
   Dimensions,
+  SafeAreaView,
 } from "react-native";
 import Colors from "_styles/colors";
 import {
@@ -35,6 +36,10 @@ export default class Login extends Component {
     const navigation = this.props.navigation;
 
     return (
+      <SafeAreaView style={{flex:1}}>
+        <ScrollView style={{flex:1}}>
+
+       
       <View
         style={{
           width: "100.00%",
@@ -68,13 +73,13 @@ export default class Login extends Component {
               borderColor: Colors.white,
               flexDirection: "column",
               alignItems: "center",
-              justifyContent: "center",
+              justifyContent: "flex-end",
             }}
           >
             <Image
               resizeMode={"contain"}
               source={require("_assets/hotelia/Login.png")}
-              style={{ width: "100.00%", height: "100.00%" }}
+              style={{ width: 100, height: 100 }}
             />
           </View>
         </View>
@@ -359,7 +364,7 @@ export default class Login extends Component {
               }}
             >
               <RNButton
-                name={"Sign in"}
+                name={"Login"}
                 width={"75%"}
                 textStyle={{ ...styles.whiteText }}
                 style={{
@@ -383,7 +388,7 @@ export default class Login extends Component {
                 onPress={() => {}}
                 style={{
                   width: fixedWidth * 70.0,
-                  height: fixedWidth * 50.0,
+                  height: fixedWidth * 55.0,
                   marginHorizontal: fixedWidth * 5.0,
                   borderRadius: fixedWidth * 15,
                   borderWidth: 1,
@@ -396,7 +401,7 @@ export default class Login extends Component {
                 <Image
                   resizeMode={"cover"}
                   source={require("_assets/common/face-id.png")}
-                  style={{ width: "60.00%", height: "60.00%" }}
+                  style={{ width: "70.00%", height: "70.00%" , }}
                 />
               </TouchableOpacity>
             </View>
@@ -470,8 +475,7 @@ export default class Login extends Component {
               style={{
                 width: fixedWidth * 80.0,
                 height: fixedWidth * 50.0,
-                marginLeft: fixedWidth * 5.0,
-                marginRight: fixedWidth * 5.0,
+                marginHorizontal:20,
                 borderRadius: fixedWidth * 20,
                 borderWidth: 1,
                 borderColor: Colors.grey,
@@ -491,8 +495,7 @@ export default class Login extends Component {
               style={{
                 width: fixedWidth * 80.0,
                 height: fixedWidth * 50.0,
-                marginLeft: fixedWidth * 5.0,
-                marginRight: fixedWidth * 5.0,
+                
                 borderRadius: fixedWidth * 20,
                 borderWidth: 1,
                 borderColor: Colors.grey,
@@ -512,8 +515,7 @@ export default class Login extends Component {
               style={{
                 width: fixedWidth * 80.0,
                 height: fixedWidth * 50.0,
-                marginLeft: fixedWidth * 5.0,
-                marginRight: fixedWidth * 5.0,
+                marginHorizontal:20,
                 borderRadius: fixedWidth * 20,
                 borderWidth: 1,
                 borderColor: Colors.grey,
@@ -534,6 +536,7 @@ export default class Login extends Component {
           style={{
             width: "100.00%",
             marginTop: fixedWidth * 15.0,
+            marginBottom:30,
             borderRadius: fixedWidth * 0,
             borderWidth: 0,
             borderColor: Colors.white,
@@ -546,6 +549,7 @@ export default class Login extends Component {
             style={{
               borderRadius: fixedWidth * 0,
               borderWidth: 0,
+             
               borderColor: Colors.white,
               flexDirection: "column",
               alignItems: "flex-start",
@@ -587,11 +591,13 @@ export default class Login extends Component {
                 textAlign: "left",
               }}
             >
-              Register
+              Registerss
             </Text>
           </TouchableOpacity>
         </View>
       </View>
+      </ScrollView>
+      </SafeAreaView>
     );
   }
 }

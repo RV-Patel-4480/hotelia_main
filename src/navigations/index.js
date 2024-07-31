@@ -112,7 +112,7 @@ const AppContainer = () => {
     
 
       <NavigationContainer>
-        {state?.userToken ? <SplashScreen /> : <SplashScreen />}
+      {state?.userToken ? <AppNavigator /> : <AuthNavigator />}
       </NavigationContainer>
       
     </AuthContext.Provider>

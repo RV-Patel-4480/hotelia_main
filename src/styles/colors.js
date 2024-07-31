@@ -24,4 +24,5 @@ export default {
   transparent: "transparent",
   buttongrey: "#bfbfbf",
   temp: "#00cccc",
+  darkprimary:"#0D7BE7"
 };

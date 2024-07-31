@@ -12,7 +12,6 @@ import styles from "./styles";
 
 import { AuthContext } from "_navigations/AuthContext";
 import NextButton from "_components/NextButton";
-import DoneButton from "_components/DoneButton";
 import OnBoarding1 from "_screens/OnBoarding1";
 import OnBoarding2 from "_screens/OnBoarding2";
 import OnBoarding3 from "_screens/OnBoarding3";
@@ -49,11 +48,11 @@ export default class OnBoarding extends Component {
           }}
           skipStyle={{
             position: "absolute",
-            backgroundColor: "lightgrey",
+            backgroundColor: "#ECECEC",
             right: 20,
             top: 20,
             paddingHorizontal: 15,
-            borderRadius: 15,
+            borderRadius: 10,
           }}
           pagination={{ hideOnScreen: [3] }}
           dotStyle={{ ...styles.dotClass2 }}

@@ -20,7 +20,6 @@ class App extends Component {
 const styles = StyleSheet.create({
   AndroidSafeArea: {
     flex: 1,
-   backgroundColor:"red"
   },
 });
 

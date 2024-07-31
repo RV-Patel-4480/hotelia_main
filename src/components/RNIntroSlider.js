@@ -44,7 +44,7 @@ const RNIntroSlider = (props) => {
 
   const _renderPages = () => {
     return data.map((pg, index) => (
-      <View style={{ width }} key={"p" + index}>
+      <View style={{ width,  }} key={"p" + index}>
         {pg}
       </View>
     ));
@@ -83,7 +83,7 @@ const RNIntroSlider = (props) => {
   const _renderNextButton = () =>
     props.showNextButton &&
     _renderButton(
-      "Next",
+      "Next", 
       props.nextLabel,
       () => goToSlide(sliderState.currentPage + 1, true),
       props.renderNextButton,
@@ -120,6 +120,8 @@ const RNIntroSlider = (props) => {
       props.skipStyle
     );
 
+    
+
   const _renderPaginationDot = () => {
     return (
       <View style={[styles.paginationWrapper, props.paginationWrapperStyle]}>
@@ -154,7 +156,7 @@ const RNIntroSlider = (props) => {
         
         <ScrollView
           ref={(ref) => (scrollRef = ref)}
-          style={{ flex: 1 , backgroundColor:"red" }}
+          style={{ flex: 1 , }}
           horizontal={true}
           scrollEventThrottle={16}
           pagingEnabled={true}
@@ -185,14 +187,14 @@ const styles = StyleSheet.create({
   },
   paginationWrapper: {
     position: "absolute",
-    bottom: 40,
-    left: 20,
+    top: "60%",
+    left: "40%",
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "row",
   },
   paginationDots: {
-    height: 10,
+    height: 1,
     width: 10,
     borderRadius: 10 / 2,
     backgroundColor: "#0898A0",
@@ -226,6 +228,9 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(255, 255, 255, .9)",
   },
   dotStyle: {
+    borderWidth:1,
+    borderColor:"##BEBEBE",
+
     backgroundColor: "rgba(0, 0, 0, .2)",
   },
 });

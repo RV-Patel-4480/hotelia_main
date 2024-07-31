@@ -13,7 +13,7 @@ export default styles = {
     paddingTop: fixedWidth * 10,
     paddingBottom: fixedWidth * 10,
     backgroundColor: Colors.primary,
-    borderRadius: fixedWidth * 30,
+    borderRadius: fixedWidth * 20,
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
@@ -21,7 +21,7 @@ export default styles = {
   },
   whiteText: {
     textAlign: "center",
-    fontSize: ScreenWidth * 0.03808,
+    fontSize:20,
     fontWeight: "600",
     color: Colors.white,
   },

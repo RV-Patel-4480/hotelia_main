@@ -37,8 +37,8 @@ class IntroSlider extends Component {
             alignItems: "center",
             backgroundColor: colors.yellow,
             borderRadius: 50,
-            width: 38,
-            height: 38,
+            width: "10%",
+            height: 50,
             marginLeft: 10,
             shadowOffset: { width: 1, height: 0 },
           }}

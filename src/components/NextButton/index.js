@@ -28,10 +28,11 @@ const NextButton = (props) => {
         borderColor: Colors.white,
         flexDirection: "column",
         alignItems: "center",
+        alignSelf:"center",
         justifyContent: "center",
         position: "absolute",
         bottom: 20,
-        right: 20,
+        // right: 20,
       }}
     >
       <Icon

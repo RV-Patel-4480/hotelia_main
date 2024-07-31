@@ -76,11 +76,11 @@ export default class OTP extends Component {
             <Image
               resizeMode={"contain"}
               source={require("_assets/hotelia/OTP.png")}
-              style={{ width: "100.00%", height: "100.00%" }}
+              style={{ width: 100, height: 100 }}
             />
           </View>
         </View>
-        <View
+        <View 
           style={{
             width: "100.00%",
             borderRadius: fixedWidth * 0,
@@ -118,6 +118,7 @@ export default class OTP extends Component {
                 textTransform: "none",
                 fontSize: ScreenWidth * 0.04,
                 marginBottom: fixedWidth * 20.0,
+                marginTop:10,
                 color: Colors.blue,
                 fontWeight: "600",
                 textAlign: "left",
@@ -406,10 +407,10 @@ export default class OTP extends Component {
                 <Text
                   style={{
                     textTransform: "none",
-                    fontSize: ScreenWidth * 0.04,
+                    fontSize: 18,
                     paddingLeft: fixedWidth * 8.0,
                     color: Colors.blue,
-                    fontWeight: "normal",
+                    fontWeight: "600",
                     textAlign: "left",
                   }}
                 >
