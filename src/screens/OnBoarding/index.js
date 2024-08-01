@@ -16,6 +16,7 @@ import OnBoarding1 from "_screens/OnBoarding1";
 import OnBoarding2 from "_screens/OnBoarding2";
 import OnBoarding3 from "_screens/OnBoarding3";
 import RNIntroSlider from "_components/RNIntroSlider";
+import DoneButton from "_components/DoneButton";
 
 export default class OnBoarding extends Component {
   static contextType = AuthContext;
