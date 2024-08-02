@@ -31,6 +31,8 @@ import ProfileRequestPersonalData from "_screens/ProfileRequestPersonalData";
 import ProfileDeleteAccount from "_screens/ProfileDeleteAccount";
 import ProfileNotification from "_screens/ProfileNotification";
 import ProfileMyReview from "_screens/ProfileMyReview";
+import Icon from "_components/Icon";
+import { fixedWidth } from "_styles/dimension";
 
 const Drawer = createDrawerNavigator();
 const Tabs = createBottomTabNavigator();
@@ -49,7 +51,27 @@ function AppNavigator() {
       <Tabs.Screen
         name="HomeScreen"
         component={HomeScreen}
-        options={{ headerShown: false, title: "HomeScreen" }}
+        options={{
+          headerShown: false,
+          title: "HomeScreen",
+          tabBarIcon: () => {
+            return (
+              <Icon
+                type={"entypo"}
+                name={"home"}
+                // color={state.index == 0 ? Colors.blue : Colors.textgrey}
+                style={{
+                  width: fixedWidth * 24.0,
+                  height: fixedWidth * 24.0,
+                  marginVertical: fixedWidth * 4.0,
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              />
+            );
+          },
+        }}
       />
       <Tabs.Screen
         name="HotelDetails"
@@ -138,6 +160,23 @@ function AppNavigator() {
         options={{
           title: "My Orders",
           header: (props) => <Navbar2 {...props} />,
+          tabBarIcon: () => {
+            return (
+              <Icon
+                type={"material-community"}
+                name={"ticket-confirmation"}
+                color={state.index == 10 ? Colors.blue : Colors.textgrey}
+                style={{
+                  width: fixedWidth * 24.0,
+                  height: fixedWidth * 24.0,
+                  marginVertical: fixedWidth * 4.0,
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              ></Icon>
+            );
+          },
         }}
       />
       <Tabs.Screen
