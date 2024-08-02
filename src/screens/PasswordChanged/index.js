@@ -75,7 +75,7 @@ export default class PasswordChanged extends Component {
           >
             <Image
               resizeMode={"contain"}
-              source={require("_assets/hotelia/Password_changed.png")}
+              source={require("_assets/hotelia/Password_change.png")}
               style={{ width: "100.00%", height: "100.00%" }}
             />
           </View>

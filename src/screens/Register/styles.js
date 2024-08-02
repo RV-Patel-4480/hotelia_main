@@ -30,7 +30,7 @@ export default styles = {
     paddingTop: fixedWidth * 10,
     paddingBottom: fixedWidth * 10,
     backgroundColor: Colors.primary,
-    borderRadius: fixedWidth * 30,
+    borderRadius: fixedWidth * 20,
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",

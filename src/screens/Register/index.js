@@ -10,6 +10,7 @@ import {
   ImageBackground,
   TextInput,
   Dimensions,
+  SafeAreaView,
 } from "react-native";
 import Colors from "_styles/colors";
 import {
@@ -35,10 +36,11 @@ export default class Register extends Component {
     const navigation = this.props.navigation;
 
     return (
+      <SafeAreaView style={{flex:1, backgroundColor: Colors.white,}}>
+        <ScrollView style={{flex:1}}>
       <View
         style={{
-          width: "100.00%",
-          height: "100%",
+          flex:1,
           backgroundColor: Colors.white,
           borderRadius: fixedWidth * 0,
           borderWidth: 0,
@@ -68,13 +70,13 @@ export default class Register extends Component {
               borderColor: Colors.white,
               flexDirection: "column",
               alignItems: "center",
-              justifyContent: "center",
+              justifyContent: "flex-end",
             }}
           >
             <Image
               resizeMode={"contain"}
               source={require("_assets/hotelia/Register.png")}
-              style={{ width: "100.00%", height: "100.00%" }}
+              style={{ width: 100, height: 100 }}
             />
           </View>
         </View>
@@ -314,8 +316,7 @@ export default class Register extends Component {
               style={{
                 width: fixedWidth * 80.0,
                 height: fixedWidth * 50.0,
-                marginLeft: fixedWidth * 5.0,
-                marginRight: fixedWidth * 5.0,
+                marginHorizontal:20,
                 borderRadius: fixedWidth * 20,
                 borderWidth: 1,
                 borderColor: Colors.grey,
@@ -335,8 +336,7 @@ export default class Register extends Component {
               style={{
                 width: fixedWidth * 80.0,
                 height: fixedWidth * 50.0,
-                marginLeft: fixedWidth * 5.0,
-                marginRight: fixedWidth * 5.0,
+               
                 borderRadius: fixedWidth * 20,
                 borderWidth: 1,
                 borderColor: Colors.grey,
@@ -356,8 +356,7 @@ export default class Register extends Component {
               style={{
                 width: fixedWidth * 80.0,
                 height: fixedWidth * 50.0,
-                marginLeft: fixedWidth * 5.0,
-                marginRight: fixedWidth * 5.0,
+                marginHorizontal:20,
                 borderRadius: fixedWidth * 20,
                 borderWidth: 1,
                 borderColor: Colors.grey,
@@ -380,6 +379,7 @@ export default class Register extends Component {
             marginTop: fixedWidth * 15.0,
             borderRadius: fixedWidth * 0,
             borderWidth: 0,
+            marginBottom:30,
             borderColor: Colors.white,
             flexDirection: "row",
             alignItems: "center",
@@ -436,6 +436,8 @@ export default class Register extends Component {
           </TouchableOpacity>
         </View>
       </View>
+      </ScrollView>
+      </SafeAreaView>
     );
   }
 }

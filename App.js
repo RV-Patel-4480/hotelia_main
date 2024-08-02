@@ -7,6 +7,10 @@ class App extends Component {
   render() {
     return (
       <SafeAreaView style={styles.AndroidSafeArea}>
+       <StatusBar
+        animated={true}
+        backgroundColor="#61dafb"
+      />
         <AppContainer />
       </SafeAreaView>
     );
@@ -16,8 +20,6 @@ class App extends Component {
 const styles = StyleSheet.create({
   AndroidSafeArea: {
     flex: 1,
-    backgroundColor: "white",
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
   },
 });
 

@@ -83,7 +83,7 @@ export default class OnBoarding3 extends Component {
           >
             <Image
               resizeMode={"contain"}
-              source={require("_assets/hotelia/on-boarding-3.png")}
+              source={require("_assets/hotelia/Enjoy_Your_Vecations.png")}
               style={{ width: "100.00%", height: "100.00%" }}
             />
           </View>
@@ -91,10 +91,7 @@ export default class OnBoarding3 extends Component {
         <View
           style={{
             width: "100.00%",
-            height: "35.00%",
-            backgroundColor: Colors.blue,
-            borderTopRightRadius: fixedWidth * 60,
-            borderWidth: 0,
+            height: "40.00%",
             borderColor: Colors.white,
             flexDirection: "column",
             alignItems: "center",
@@ -104,23 +101,20 @@ export default class OnBoarding3 extends Component {
           <Text
             style={{
               textTransform: "none",
-              fontSize: ScreenWidth * 0.07,
-              marginTop: fixedWidth * 10.0,
-              marginBottom: fixedWidth * 10.0,
-              color: Colors.white,
+              fontSize: 30,
+             
+              color: Colors.black,
               fontWeight: "bold",
               textAlign: "center",
             }}
           >
-            Stay
+            Enjoy Your Vacations
           </Text>
           <Text
             style={{
               textTransform: "none",
-              fontSize: ScreenWidth * 0.04,
-              marginTop: fixedWidth * 10.0,
-              marginBottom: fixedWidth * 10.0,
-              color: Colors.white,
+              fontSize: 14,
+              color: Colors.black,
               fontWeight: "normal",
               textAlign: "center",
             }}

@@ -83,7 +83,7 @@ export default class OnBoarding1 extends Component {
           >
             <Image
               resizeMode={"contain"}
-              source={require("_assets/hotelia/on-boarding-1.png")}
+              source={require("_assets/hotelia/Choose_a_Place.png")}
               style={{ width: "100.00%", height: "100.00%" }}
             />
           </View>
@@ -91,10 +91,7 @@ export default class OnBoarding1 extends Component {
         <View
           style={{
             width: "100.00%",
-            height: "35.00%",
-            backgroundColor: Colors.blue,
-            borderTopLeftRadius: fixedWidth * 60,
-            borderWidth: 0,
+            height: "40.00%",
             borderColor: Colors.white,
             flexDirection: "column",
             alignItems: "center",
@@ -104,30 +101,25 @@ export default class OnBoarding1 extends Component {
           <Text
             style={{
               textTransform: "none",
-              fontSize: ScreenWidth * 0.07,
-              marginTop: fixedWidth * 10.0,
-              marginBottom: fixedWidth * 10.0,
-              color: Colors.white,
+              fontSize: 30,
+             
+              color: Colors.black,
               fontWeight: "bold",
               textAlign: "center",
             }}
           >
-            Destination
+            Choose a Place
           </Text>
           <Text
             style={{
               textTransform: "none",
-              fontSize: ScreenWidth * 0.04,
-              marginTop: fixedWidth * 10.0,
-              marginBottom: fixedWidth * 10.0,
-              color: Colors.white,
+              fontSize: 14,
+              color: Colors.black,
               fontWeight: "normal",
               textAlign: "center",
             }}
           >
-            Ut feugiat velit ut sagittis accumsan.{`\n`}Fusce eu eros nec massa
-            placerat{`\n`}tempor. Donec loe lacus, eleifend in{`\n`}sollicitudin
-            eu, consectetur vitae turpis.
+            Lorem ipsum dolor sit amet,consectetur{`\n`}adipiscing elit.Nunc molis diam tellus{`\n`}fermentum ehoncus
           </Text>
           <View
             style={{
